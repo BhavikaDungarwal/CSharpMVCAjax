@@ -1,8 +1,13 @@
 {
   "version": 2,
-  "dgSpecHash": "0ibM8cvv0ENpyzCWeX+KVbp0waM4aA8lQr6H1dbK7RLn8vhO4nA3M+5sLkY0ld9O2Qi1c9toSC3oarl2RndcWg==",
+  "dgSpecHash": "V3Gp4Oav3oD3DmE2sx9z2Ce3Sd2rumrMualPsA0oswofkTEko2vCGnn8FKUtrUOil31g7pidShHcONyfTKoDsA==",
   "success": true,
-  "projectFilePath": "D:\\BhavikaJain\\BhavikaJain\\GitHub\\CSharpMVCAjax\\frontend\\frontend.csproj",
-  "expectedPackageFiles": [],
+  "projectFilePath": "D:\\gitmvc\\CSharpMVCAjax\\CSharpMVCAjax\\frontend\\frontend.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\User\\.nuget\\packages\\microsoft.netcore.app.ref\\6.0.26\\microsoft.netcore.app.ref.6.0.26.nupkg.sha512",
+    "C:\\Users\\User\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\6.0.26\\microsoft.windowsdesktop.app.ref.6.0.26.nupkg.sha512",
+    "C:\\Users\\User\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\6.0.26\\microsoft.aspnetcore.app.ref.6.0.26.nupkg.sha512",
+    "C:\\Users\\User\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\6.0.26\\microsoft.netcore.app.host.win-x64.6.0.26.nupkg.sha512"
+  ],
   "logs": []
 }
