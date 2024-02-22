@@ -1,9 +1,6 @@
-using frontend.Repository;
-
 var builder = WebApplication.CreateBuilder(args);
 
 builder.Services.AddControllersWithViews();
-builder.Services.AddScoped<IEmployeeRepository,EmployeeRepository>();
 
 var app = builder.Build();
 
