@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "0ibM8cvv0ENpyzCWeX+KVbp0waM4aA8lQr6H1dbK7RLn8vhO4nA3M+5sLkY0ld9O2Qi1c9toSC3oarl2RndcWg==",
+  "dgSpecHash": "9Spx8wfp95OSP4fr02gvJxQ6m/RICQzNo3KwTTdb7FnawJfN7CzuIkI7E1HyxEGQUIZlrYokVwAMW/xJkyjnCQ==",
   "success": true,
-  "projectFilePath": "D:\\BhavikaJain\\BhavikaJain\\GitHub\\CSharpMVCAjax\\frontend\\frontend.csproj",
+  "projectFilePath": "D:\\CoreMVCDemo\\Git\\CSharpMVCAjax\\CSharpMVCAjax\\frontend\\frontend.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }
