@@ -1,23 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "D:\\BhavikaJain\\BhavikaJain\\GitHub\\CSharpMVCAjax\\frontend\\frontend.csproj": {}
+    "C:\\Users\\vrush\\OneDrive\\Desktop\\New folder\\CSharpMVCAjax\\CSharpMVCAjax\\frontend\\frontend.csproj": {}
   },
   "projects": {
-    "D:\\BhavikaJain\\BhavikaJain\\GitHub\\CSharpMVCAjax\\frontend\\frontend.csproj": {
+    "C:\\Users\\vrush\\OneDrive\\Desktop\\New folder\\CSharpMVCAjax\\CSharpMVCAjax\\frontend\\frontend.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\BhavikaJain\\BhavikaJain\\GitHub\\CSharpMVCAjax\\frontend\\frontend.csproj",
+        "projectUniqueName": "C:\\Users\\vrush\\OneDrive\\Desktop\\New folder\\CSharpMVCAjax\\CSharpMVCAjax\\frontend\\frontend.csproj",
         "projectName": "frontend",
-        "projectPath": "D:\\BhavikaJain\\BhavikaJain\\GitHub\\CSharpMVCAjax\\frontend\\frontend.csproj",
-        "packagesPath": "C:\\Users\\intern021\\.nuget\\packages\\",
-        "outputPath": "D:\\BhavikaJain\\BhavikaJain\\GitHub\\CSharpMVCAjax\\frontend\\obj\\",
+        "projectPath": "C:\\Users\\vrush\\OneDrive\\Desktop\\New folder\\CSharpMVCAjax\\CSharpMVCAjax\\frontend\\frontend.csproj",
+        "packagesPath": "C:\\Users\\vrush\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\vrush\\OneDrive\\Desktop\\New folder\\CSharpMVCAjax\\CSharpMVCAjax\\frontend\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
-        ],
         "configFilePaths": [
-          "C:\\Users\\intern021\\AppData\\Roaming\\NuGet\\NuGet.Config"
+          "C:\\Users\\vrush\\AppData\\Roaming\\NuGet\\NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net6.0"
@@ -40,6 +37,12 @@
       "frameworks": {
         "net6.0": {
           "targetAlias": "net6.0",
+          "dependencies": {
+            "Npgsql": {
+              "target": "Package",
+              "version": "[8.0.2, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",
@@ -59,7 +62,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.405\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.419\\RuntimeIdentifierGraph.json"
         }
       }
     }
