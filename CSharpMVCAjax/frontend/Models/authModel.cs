@@ -5,7 +5,7 @@ using System.Threading.Tasks;
 
 namespace frontend.Models
 {
-    public class authModel
+    public class AuthModel
     {
         public int c_userid { get; set;}
         public string? c_name { get; set;}
