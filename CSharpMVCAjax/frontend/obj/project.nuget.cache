@@ -1,34 +1,16 @@
 {
   "version": 2,
-<<<<<<< HEAD
-  "dgSpecHash": "9Spx8wfp95OSP4fr02gvJxQ6m/RICQzNo3KwTTdb7FnawJfN7CzuIkI7E1HyxEGQUIZlrYokVwAMW/xJkyjnCQ==",
+  "dgSpecHash": "+ofFsCcIGwJedw6GZ8tRH5JzqfYSlNFVHY56hhxR7APZEsCM+8jOc3E06m1OP4kfPcN4IytRCz28ULsYhwupKg==",
   "success": true,
-  "projectFilePath": "D:\\CoreMVCDemo\\Git\\CSharpMVCAjax\\CSharpMVCAjax\\frontend\\frontend.csproj",
-  "expectedPackageFiles": [],
-=======
-<<<<<<< HEAD
-  "dgSpecHash": "dmNSH7k1jRRH9ePxqrRfoBZ7C7gd9a/pSdkUgv85IAwWHhrcAeqf4B0lPuUbd94Rn9Z6wXSMPXt/bZhbg12GXA==",
-  "success": true,
-  "projectFilePath": "D:\\gitmvc\\CSharpMVCAjax\\CSharpMVCAjax\\frontend\\frontend.csproj",
+  "projectFilePath": "d:\\CoreMVCDemo\\Git\\CSharpMVCAjax\\CSharpMVCAjax\\frontend\\frontend.csproj",
   "expectedPackageFiles": [
-    "C:\\Users\\User\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\8.0.0\\microsoft.extensions.dependencyinjection.abstractions.8.0.0.nupkg.sha512",
-    "C:\\Users\\User\\.nuget\\packages\\microsoft.extensions.logging.abstractions\\8.0.0\\microsoft.extensions.logging.abstractions.8.0.0.nupkg.sha512",
-    "C:\\Users\\User\\.nuget\\packages\\npgsql\\8.0.2\\npgsql.8.0.2.nupkg.sha512",
-    "C:\\Users\\User\\.nuget\\packages\\system.diagnostics.diagnosticsource\\8.0.0\\system.diagnostics.diagnosticsource.8.0.0.nupkg.sha512",
-    "C:\\Users\\User\\.nuget\\packages\\system.runtime.compilerservices.unsafe\\6.0.0\\system.runtime.compilerservices.unsafe.6.0.0.nupkg.sha512",
-    "C:\\Users\\User\\.nuget\\packages\\system.text.encodings.web\\8.0.0\\system.text.encodings.web.8.0.0.nupkg.sha512",
-    "C:\\Users\\User\\.nuget\\packages\\system.text.json\\8.0.0\\system.text.json.8.0.0.nupkg.sha512",
-=======
-  "dgSpecHash": "V3Gp4Oav3oD3DmE2sx9z2Ce3Sd2rumrMualPsA0oswofkTEko2vCGnn8FKUtrUOil31g7pidShHcONyfTKoDsA==",
-  "success": true,
-  "projectFilePath": "D:\\gitmvc\\CSharpMVCAjax\\CSharpMVCAjax\\frontend\\frontend.csproj",
-  "expectedPackageFiles": [
->>>>>>> d5ffd8744899964f78d09eccfe5abf0842deb096
-    "C:\\Users\\User\\.nuget\\packages\\microsoft.netcore.app.ref\\6.0.26\\microsoft.netcore.app.ref.6.0.26.nupkg.sha512",
-    "C:\\Users\\User\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\6.0.26\\microsoft.windowsdesktop.app.ref.6.0.26.nupkg.sha512",
-    "C:\\Users\\User\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\6.0.26\\microsoft.aspnetcore.app.ref.6.0.26.nupkg.sha512",
-    "C:\\Users\\User\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\6.0.26\\microsoft.netcore.app.host.win-x64.6.0.26.nupkg.sha512"
+    "C:\\Users\\91876\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\8.0.0\\microsoft.extensions.dependencyinjection.abstractions.8.0.0.nupkg.sha512",
+    "C:\\Users\\91876\\.nuget\\packages\\microsoft.extensions.logging.abstractions\\8.0.0\\microsoft.extensions.logging.abstractions.8.0.0.nupkg.sha512",
+    "C:\\Users\\91876\\.nuget\\packages\\npgsql\\8.0.2\\npgsql.8.0.2.nupkg.sha512",
+    "C:\\Users\\91876\\.nuget\\packages\\system.diagnostics.diagnosticsource\\8.0.0\\system.diagnostics.diagnosticsource.8.0.0.nupkg.sha512",
+    "C:\\Users\\91876\\.nuget\\packages\\system.runtime.compilerservices.unsafe\\6.0.0\\system.runtime.compilerservices.unsafe.6.0.0.nupkg.sha512",
+    "C:\\Users\\91876\\.nuget\\packages\\system.text.encodings.web\\8.0.0\\system.text.encodings.web.8.0.0.nupkg.sha512",
+    "C:\\Users\\91876\\.nuget\\packages\\system.text.json\\8.0.0\\system.text.json.8.0.0.nupkg.sha512"
   ],
->>>>>>> origin/sakshi
   "logs": []
 }

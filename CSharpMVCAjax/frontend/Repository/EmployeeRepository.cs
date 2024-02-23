@@ -1,15 +1,9 @@
-using System;
-using System.Collections.Generic;
 using System.Data;
-using System.Linq;
-using System.Threading.Tasks;
 using frontend.Models;
 using Npgsql;
-
-
 namespace frontend.Repository
 {
-    public class EmployeeRepository : CommonRepository
+    public class EmployeeRepository : CommonRepository,IEmployeeRepository
     {
         public bool AddData(EmployeeModel employee)
         {
