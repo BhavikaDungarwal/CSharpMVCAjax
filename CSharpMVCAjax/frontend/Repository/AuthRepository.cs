@@ -58,7 +58,7 @@ namespace Frontend.Repository
                 try
                 {
                     conn.Open();
-                    string squery = "INSERT INTO public.t_auth (c_name, c_email, c_password, c_role) VALUES (@c_name, @c_email, @c_password, 0)";
+                    string squery = "INSERT INTO public.t_auth(c_name, c_email, c_password, c_role) VALUES(@c_name, @c_email, @c_password, 0)";
                     using (NpgsqlCommand com = new NpgsqlCommand(squery, conn))
                     {
                         com.CommandType = CommandType.Text;

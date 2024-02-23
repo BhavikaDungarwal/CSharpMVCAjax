@@ -20,50 +20,30 @@ namespace Frontend.Controllers
         [HttpGet]
         public IActionResult Index()
         {
+            
             return View();
         }
 
-
         [HttpPost]
-        public IActionResult Login([FromBody] authModel auth)
+        public IActionResult register(authModel auth)
         {
-            var user = _authRepository.login(auth);
-            if (user != null)
-            {
-                HttpContext.Session.SetInt32("c_userid", user.c_userid);
-                if (user.c_role == 1)
-                {
-                    return Json(new { redirectToAction = "Admin/Product" });
-                }
-                else
-                {
-                    return Json(new { redirectToAction = "Product/Index" });
-                }
-            }
-            else
-            {
-                return Json(new { error = "Invalid username or password." });
-            }
+            _authRepository.signup(auth);
+            return Json(new{success=true});
         }
 
-     
-
         [HttpPost]
-        public IActionResult Signup([FromBody] authModel auth)
+        public IActionResult login(authModel auth)
         {
-            if (ModelState.IsValid)
-            {
-                _authRepository.signup(auth);
-                return Json(new { redirectToAction = "Login" });
-            }
-
-            return Json(new { error = "Invalid model state." });
+            var data = _authRepository.login(auth);
+            // HttpContext.Session.SetInt32("userId",data.c_userid);
+            // return Json(new {isAdmin = data.c_role != 0});
+            return Json(new {success = true});
         }
 
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
         public IActionResult Error()
         {
             return View("Error!");
-        }
+        }
     }
 }

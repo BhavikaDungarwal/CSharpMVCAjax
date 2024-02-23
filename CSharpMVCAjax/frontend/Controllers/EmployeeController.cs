@@ -23,6 +23,12 @@ namespace frontend.Controllers
             _webHostEnvironment = webHostEnvironment;
         }
 
+
+
+        public IActionResult Index()
+        {
+            return View();
+        }
         public IActionResult Get()
         {
             var data = _empRepository.Alldata();

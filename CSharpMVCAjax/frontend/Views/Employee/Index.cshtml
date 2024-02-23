@@ -1,0 +1,95 @@
+@model frontend.Models.EmployeeModel;
+@{
+    ViewData["Title"] = "alldata";
+}
+@section Styles {
+       <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.11.5/css/dataTables.bootstrap5.min.css">
+ 
+}
+<div class="d-flex mb-5">
+    <a href="/Emp" class="btn btn-secondary me-3" id="forback">back</a>
+    <a href="/adddata" class="btn btn-primary ">Add data</a>
+</div>
+
+<table id="tabledata" class="table-striped table w-50">
+    <thead>
+        <th scope="col">Emp Id</th>
+        <th scope="col">Emp Name</th>
+        <th scope="col">Email</th>
+        <th scope="col">Gender</th>
+        <th scope="col">Dob</th>
+        <th scope="col">Hobby</th>
+        <th scope="col">Profile</th>
+        <th scope="col">Role</th>
+        <th scope="col">City</th>
+        <th scope="col">Department</th>
+        <th scope="col">Action</th>
+    </thead>
+
+    <tbody id="tablebody">
+    </tbody>
+
+</table>
+<hr>
+@section Scripts {
+
+    <script type="text/javascript" charset="utf8"
+        src="https://cdn.datatables.net/1.11.5/js/jquery.dataTables.min.js"></script>
+    <script type="text/javascript" charset="utf8"
+        src="https://cdn.datatables.net/1.11.5/js/dataTables.bootstrap5.min.js"></script>
+    <script>
+          var datatable =  $("#tabledata").DataTable();
+
+        function loaddata() {
+            $.ajax({
+                url: "Employee/Get",
+                type: "GET",
+                contentType: "application/json",
+                dataType: "json",
+                success: function (data) {
+                    datatable.clear().draw();
+                    $.each(data, function (index, city) {
+                        var html = `<tr>
+                                                <td>${city.c_empid}</td>
+                                                <td>${city.c_name}</td>
+                                                <td>${city.c_email}</td>
+                                                <td>${city.c_gender}</td>
+                                                <td>${city.c_dob}</td>
+                                                <td>${city.c_hobby}</td>
+                                                <td><img src="photos/${city.c_profile}" width="100"alt="${city.c_profile}"></td>
+                                                <td>${city.c_role}</td>
+                                                <td>${city.c_cityid}</td>
+                                                <td>${city.c_departmentid}</td>
+                                                <td><a class="btn-danger btn delete" data-item-id=${city.c_empid}>DELETE</a>
+                                                <a  href="/adddata?id=${city.c_empid}" class="btn-success btn edit">Edit</a></td>
+                                            </tr>`;
+                        datatable.row.add($(html)[0]);
+                    });
+                    datatable.draw();
+                }
+            });
+        }
+
+        $(document).ready(function () {
+            loaddata();
+
+
+
+
+            $("#tabledata").on("click", ".delete", function () {
+                var id = $(this).data("item-id");
+                $.ajax({
+                    url: "Employee/Delete" + id,
+                    type: "DELETE",
+                    success: function (data) {
+                        loaddata();
+                    }
+                })
+            });
+
+
+
+
+        });
+    </script>
+}
