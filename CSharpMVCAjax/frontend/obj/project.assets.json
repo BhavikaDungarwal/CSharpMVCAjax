@@ -436,20 +436,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\intern021\\.nuget\\packages\\": {},
-    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
+    "C:\\Users\\vrush\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\BhavikaJain\\BhavikaJain\\GitHub\\CSharpMVCAjax\\frontend\\frontend.csproj",
+      "projectUniqueName": "C:\\Users\\vrush\\OneDrive\\Desktop\\New folder\\CSharpMVCAjax\\CSharpMVCAjax\\frontend\\frontend.csproj",
       "projectName": "frontend",
-      "projectPath": "D:\\BhavikaJain\\BhavikaJain\\GitHub\\CSharpMVCAjax\\frontend\\frontend.csproj",
-      "packagesPath": "C:\\Users\\intern021\\.nuget\\packages\\",
-      "outputPath": "D:\\BhavikaJain\\BhavikaJain\\GitHub\\CSharpMVCAjax\\frontend\\obj\\",
+      "projectPath": "C:\\Users\\vrush\\OneDrive\\Desktop\\New folder\\CSharpMVCAjax\\CSharpMVCAjax\\frontend\\frontend.csproj",
+      "packagesPath": "C:\\Users\\vrush\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\vrush\\OneDrive\\Desktop\\New folder\\CSharpMVCAjax\\CSharpMVCAjax\\frontend\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\intern021\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        "C:\\Users\\vrush\\AppData\\Roaming\\NuGet\\NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "net6.0"
@@ -500,13 +499,5 @@
         "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.419\\RuntimeIdentifierGraph.json"
       }
     }
-  },
-  "logs": [
-    {
-      "code": "Undefined",
-      "level": "Warning",
-      "warningLevel": 1,
-      "message": "Problem reading the cache file D:\\gitmvc\\CSharpMVCAjax\\CSharpMVCAjax\\frontend\\obj\\project.nuget.cache : Invalid property identifier character: <. Path 'version', line 3, position 0."
-    }
-  ]
+  }
 }

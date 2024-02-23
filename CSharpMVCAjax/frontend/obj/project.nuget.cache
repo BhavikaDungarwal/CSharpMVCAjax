@@ -1,8 +1,16 @@
 {
   "version": 2,
-  "dgSpecHash": "0ibM8cvv0ENpyzCWeX+KVbp0waM4aA8lQr6H1dbK7RLn8vhO4nA3M+5sLkY0ld9O2Qi1c9toSC3oarl2RndcWg==",
+  "dgSpecHash": "GYpFpHUXJTngCllheVTWRmQHeiP10B501Mglbx0t2MVao9V1/PvFdtDCJQnSCHqxR5KLeNFloU8xe4f5emTrnA==",
   "success": true,
-  "projectFilePath": "D:\\BhavikaJain\\BhavikaJain\\GitHub\\CSharpMVCAjax\\frontend\\frontend.csproj",
-  "expectedPackageFiles": [],
+  "projectFilePath": "C:\\Users\\vrush\\OneDrive\\Desktop\\New folder\\CSharpMVCAjax\\CSharpMVCAjax\\frontend\\frontend.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\vrush\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\8.0.0\\microsoft.extensions.dependencyinjection.abstractions.8.0.0.nupkg.sha512",
+    "C:\\Users\\vrush\\.nuget\\packages\\microsoft.extensions.logging.abstractions\\8.0.0\\microsoft.extensions.logging.abstractions.8.0.0.nupkg.sha512",
+    "C:\\Users\\vrush\\.nuget\\packages\\npgsql\\8.0.2\\npgsql.8.0.2.nupkg.sha512",
+    "C:\\Users\\vrush\\.nuget\\packages\\system.diagnostics.diagnosticsource\\8.0.0\\system.diagnostics.diagnosticsource.8.0.0.nupkg.sha512",
+    "C:\\Users\\vrush\\.nuget\\packages\\system.runtime.compilerservices.unsafe\\6.0.0\\system.runtime.compilerservices.unsafe.6.0.0.nupkg.sha512",
+    "C:\\Users\\vrush\\.nuget\\packages\\system.text.encodings.web\\8.0.0\\system.text.encodings.web.8.0.0.nupkg.sha512",
+    "C:\\Users\\vrush\\.nuget\\packages\\system.text.json\\8.0.0\\system.text.json.8.0.0.nupkg.sha512"
+  ],
   "logs": []
 }
