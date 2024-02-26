@@ -8,23 +8,19 @@
     "net6.0": []
   },
   "packageFolders": {
-    "C:\\Users\\intern021\\.nuget\\packages\\": {},
-    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
+    "C:\\Users\\91876\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\BhavikaJain\\BhavikaJain\\GitHub\\CSharpMVCAjax\\frontend\\frontend.csproj",
+      "projectUniqueName": "C:\\Users\\91876\\Desktop\\GitAjax\\CSharpMVCAjax\\CSharpMVCAjax\\frontend\\frontend.csproj",
       "projectName": "frontend",
-      "projectPath": "D:\\BhavikaJain\\BhavikaJain\\GitHub\\CSharpMVCAjax\\frontend\\frontend.csproj",
-      "packagesPath": "C:\\Users\\intern021\\.nuget\\packages\\",
-      "outputPath": "D:\\BhavikaJain\\BhavikaJain\\GitHub\\CSharpMVCAjax\\frontend\\obj\\",
+      "projectPath": "C:\\Users\\91876\\Desktop\\GitAjax\\CSharpMVCAjax\\CSharpMVCAjax\\frontend\\frontend.csproj",
+      "packagesPath": "C:\\Users\\91876\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\91876\\Desktop\\GitAjax\\CSharpMVCAjax\\CSharpMVCAjax\\frontend\\obj\\",
       "projectStyle": "PackageReference",
-      "fallbackFolders": [
-        "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
-      ],
       "configFilePaths": [
-        "C:\\Users\\intern021\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        "C:\\Users\\91876\\AppData\\Roaming\\NuGet\\NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "net6.0"
