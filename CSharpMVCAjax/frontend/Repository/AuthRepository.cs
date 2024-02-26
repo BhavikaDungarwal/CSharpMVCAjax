@@ -2,7 +2,7 @@ using System.Data;
 using frontend.Models;
 using Npgsql;
 
-namespace Frontend.Repository
+namespace frontend.Repository
 {
     public class AuthRepository : IAuthRepository
     {

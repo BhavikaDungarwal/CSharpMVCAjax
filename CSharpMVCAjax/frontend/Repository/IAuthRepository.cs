@@ -1,6 +1,6 @@
 using frontend.Models;
 
-namespace Frontend.Repository
+namespace frontend.Repository
 {
     public interface IAuthRepository
     {

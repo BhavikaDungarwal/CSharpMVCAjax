@@ -3,7 +3,7 @@ using frontend.Models;
 using Npgsql;
 namespace frontend.Repository
 {
-    public class EmployeeRepository : CommonRepository
+    public class EmployeeRepository : CommonRepository, IEmployeeRepository
     {
         public bool AddData(EmployeeModel employee)
         {

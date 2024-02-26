@@ -436,35 +436,19 @@
     ]
   },
   "packageFolders": {
-<<<<<<<<< Temporary merge branch 1
-    "C:\\Users\\User\\.nuget\\packages\\": {}
-=========
-    "C:\\Users\\DP\\.nuget\\packages\\": {}
->>>>>>>>> Temporary merge branch 2
+    "C:\\Users\\vrush\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-<<<<<<<<< Temporary merge branch 1
-      "projectUniqueName": "D:\\gitmvc\\CSharpMVCAjax\\CSharpMVCAjax\\frontend\\frontend.csproj",
+      "projectUniqueName": "C:\\Users\\vrush\\OneDrive\\Desktop\\New folder\\CSharpMVCAjax\\CSharpMVCAjax\\frontend\\frontend.csproj",
       "projectName": "frontend",
-      "projectPath": "D:\\gitmvc\\CSharpMVCAjax\\CSharpMVCAjax\\frontend\\frontend.csproj",
-      "packagesPath": "C:\\Users\\User\\.nuget\\packages\\",
-      "outputPath": "D:\\gitmvc\\CSharpMVCAjax\\CSharpMVCAjax\\frontend\\obj\\",
+      "projectPath": "C:\\Users\\vrush\\OneDrive\\Desktop\\New folder\\CSharpMVCAjax\\CSharpMVCAjax\\frontend\\frontend.csproj",
+      "packagesPath": "C:\\Users\\vrush\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\vrush\\OneDrive\\Desktop\\New folder\\CSharpMVCAjax\\CSharpMVCAjax\\frontend\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\User\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
-=========
-      "projectUniqueName": "D:\\CASEPOINT\\GitHub\\CSharpMVCAjax\\CSharpMVCAjax\\frontend\\frontend.csproj",
-      "projectName": "frontend",
-      "projectPath": "D:\\CASEPOINT\\GitHub\\CSharpMVCAjax\\CSharpMVCAjax\\frontend\\frontend.csproj",
-      "packagesPath": "C:\\Users\\DP\\.nuget\\packages\\",
-      "outputPath": "D:\\CASEPOINT\\GitHub\\CSharpMVCAjax\\CSharpMVCAjax\\frontend\\obj\\",
-      "projectStyle": "PackageReference",
-      "configFilePaths": [
-        "C:\\Users\\DP\\AppData\\Roaming\\NuGet\\NuGet.Config"
->>>>>>>>> Temporary merge branch 2
+        "C:\\Users\\vrush\\AppData\\Roaming\\NuGet\\NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "net6.0"
@@ -512,11 +496,7 @@
             "privateAssets": "all"
           }
         },
-<<<<<<<<< Temporary merge branch 1
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.101\\RuntimeIdentifierGraph.json"
-=========
         "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.419\\RuntimeIdentifierGraph.json"
->>>>>>>>> Temporary merge branch 2
       }
     }
   }
