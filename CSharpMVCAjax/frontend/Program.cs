@@ -1,7 +1,13 @@
+
+using frontend.Repository;
+using Npgsql;
+
 var builder = WebApplication.CreateBuilder(args);
 
-// Add services to the container.
 builder.Services.AddControllersWithViews();
+builder.Services.AddSingleton<IAuthRepository, AuthRepository>();
+builder.Services.AddSingleton<IEmployeeRepository, EmployeeRepository>();
+
 
 var app = builder.Build();
 

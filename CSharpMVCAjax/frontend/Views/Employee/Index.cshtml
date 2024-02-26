@@ -1,0 +1,296 @@
+@model frontend.Models.EmployeeModel;
+@{
+    ViewData["Title"] = "alldata";
+}
+@section Styles {
+                                       <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.11.5/css/dataTables.bootstrap5.min.css">
+
+}
+<table id="tabledata" class="table-striped table w-50">
+    <thead>
+        <th scope="col">Emp Id</th>
+        <th scope="col">Emp Name</th>
+        <th scope="col">Email</th>
+        <th scope="col">Gender</th>
+        <th scope="col">Dob</th>
+        <th scope="col">Hobby</th>
+        <th scope="col">Profile</th>
+        <th scope="col">Role</th>
+        <th scope="col">City</th>
+        <th scope="col">Department</th>
+        <th scope="col">Action</th>
+    </thead>
+
+    <tbody id="tablebody">
+    </tbody>
+
+</table>
+<hr>
+
+<form  id="adddata" class="w-50 border p-4" method="post" enctype="multipart/form-data">
+    <h4>Add Employee Data</h4>
+    <div class="form-group">
+        <input type="hidden" class="form-control" name="c_empid" id="c_empid" value="1">
+        <label for="c_name">Employee Name</label>
+        <input value="hello" type="text" class="form-control" name="c_name" id="c_name">
+    </div>
+    <div class="form-group">
+        <label for="c_email">Email</label>
+        <input value="a@a.a" type="email" class="form-control" name="c_email" id="c_email">
+    </div>
+    <div class="form-group">
+        <label for="c_password" id="pass">Password</label>
+        <input value="a" type="password" class="form-control" name="c_password" id="c_password">
+    </div>
+    <div class="form-group">
+        <label>Gender</label>
+        <div class="form-check">
+            <input type="radio" name="c_gender" id="male" value="Male">
+            <label for="male">Male</label>
+
+            <input type="radio" name="c_gender" id="female" value="Female">
+            <label for="female">Female</label>
+        </div>
+    </div>
+    <div class="form-group">
+        <label for="c_dob">Date of Birth</label>
+        <input type="date" class="form-control" name="c_dob" id="c_dob">
+    </div>
+<div class="form-group">
+    <label>Hobbies</label>
+    <div class="form-check">
+        <input type="checkbox" name="c_hobby_coding" id="hobby_coding" value="Coding" data-display="Coding">
+        <label for="hobby_coding">Coding</label>
+
+        <input type="checkbox" name="c_hobby_gaming" id="hobby_gaming" value="Gaming" data-display="Gaming">
+        <label for="hobby_gaming">Gaming</label>
+    </div>
+</div>
+
+    <div class="form-group">
+        <label for="c_profiles">Profile</label>
+        <input type="file" class="form-control" name="c_profiles" onchange="updateImagePreview('c_profiles', 'image')"
+            id="c_profiles" accept="image/*">
+        <img src="" id="image" width="100" >
+    </div>
+    <div class="form-group">
+        <label for="c_role">Role</label>
+        <input type="text" class="form-control" name="c_role" id="c_role">
+    </div>
+    <div class="form-group">
+        <label for="c_cityid">City ID</label>
+        <select class="form-control" id="c_cityid" name="c_cityid">
+        </select>
+    </div>
+    <div class="form-group">
+        <label for="c_departmentid">Department ID</label>
+        <select class="form-control" id="c_departmentid" name="c_departmentid">
+        </select>
+    </div>
+    <button type="submit" id="submitform" class="btn btn-success mt-3">Add Employee</button>
+    <button type="button" id="updateform" class="btn btn-primary mt-3">Update Employee</button>
+</form>
+
+@section Scripts {
+
+<script type="text/javascript" charset="utf8"
+    src="https://cdn.datatables.net/1.11.5/js/jquery.dataTables.min.js"></script>
+<script type="text/javascript" charset="utf8"
+    src="https://cdn.datatables.net/1.11.5/js/dataTables.bootstrap5.min.js"></script>
+<script>
+        function updateImagePreview(inputId, imgId) {
+            var fileInput = document.getElementById(inputId);
+            var img = document.getElementById(imgId);
+
+            if (fileInput.files && fileInput.files[0]) {
+                var reader = new FileReader();
+
+                reader.onload = function (e) {
+                    img.src = e.target.result;
+                };
+
+                reader.readAsDataURL(fileInput.files[0]);
+            } else {
+                img.src = "";
+            }
+        }
+
+        var datatable = $("#tabledata").DataTable();
+
+       function loaddata() {
+                $.ajax({
+                    url: "https://localhost:7033/Employee/Get",
+                    type: "GET",
+                    contentType: "application/json",
+                    dataType: "json",
+                    success: function (data) {
+                        console.log(data);
+                        datatable.clear().draw();
+                        $.each(data, function (index, employee) {
+                            var imageUrl = "/Employee/photos/" + employee.c_profile;
+                            var imageHtml = employee.c_profile
+                                ? `<img src="/photos/${employee.c_profile}" width="100" alt="${employee.c_profile}">`
+                                : 'No Image';
+
+                            var hobbies = Array.isArray(employee.c_hobby) ? employee.c_hobby : [employee.c_hobby];
+
+                            var html = `<tr>
+                                <td>${employee.c_empid}</td>
+                                <td>${employee.c_name}</td>
+                                <td>${employee.c_email}</td>
+                                <td>${employee.c_gender}</td>
+                                <td>${employee.c_dob}</td>
+                                <td>${hobbies.join(', ')}</td>
+                                <td>${imageHtml}</td>
+                                <td>${employee.c_role}</td>
+                                <td>${employee.c_cityid}</td>
+                                <td>${employee.c_departmentid}</td>
+                                <td>
+                                    <a class="btn-danger btn delete" data-item-id=${employee.c_empid}>DELETE</a>
+                                    <a href="#" class="btn-success btn edit" data-item-id=${employee.c_empid}>Edit</a>
+                                </tr>`;
+
+                            datatable.row.add($(html)[0]);
+                        });
+                        datatable.draw();
+                    }
+                });
+            }
+            $(document).ready(function () {
+                loaddata();
+                $.ajax({
+                    url: '/Employee/CityGet',
+                    type: 'GET',
+                    dataType: 'json',
+                    success: function (categories) {
+                        categories.forEach(function (category) {
+                            $('#c_cityid').append(`<option value="${category.c_cityid}">${category.c_cityname}</option>`);
+                        });
+                    }
+                });
+
+                $.ajax({
+                    url: '/Employee/DeptGet', 
+                    type: 'GET',
+                    dataType: 'json',
+                    success: function (categories) {
+                        categories.forEach(function (category) {
+                            $('#c_departmentid').append(`<option value="${category.c_departmentid}">${category.c_deptname}</option>`);
+                        });
+                    }
+                });
+
+                $("#adddata").submit(function (event) {
+                    event.preventDefault();
+
+                    var selectedHobbies = [];
+                    $('input[name^="c_hobby"]:checked').each(function () {
+                        console.log($(this).val());
+                        selectedHobbies.push($(this).val());
+                    });
+                    console.log(selectedHobbies);
+                    var hobbiesString = selectedHobbies.join(', ');
+                    console.log(hobbiesString);
+                    // Set the hidden input value for hobbies
+
+
+                    var formData = new FormData(this);
+                    formData.append('c_hobby', hobbiesString);
+
+                    $.ajax({
+                        url: '/Employee/Post',
+                        type: "POST",
+                        data: formData,
+                        processData: false,
+                        contentType: false,
+                        success: function (response) {
+                            loaddata();
+                        }
+                    });
+                });
+
+
+
+
+                 $("#tabledata").on("click", ".delete", function () {
+                     var id = $(this).data("item-id");
+                     $.ajax({
+                         url: "/Employee/Delete/",
+                         type: "DELETE",
+                         success: function (data) {
+                             loaddata();
+                         }
+                     })
+                 });
+
+       
+                                 // Fetch data for editing when the "Edit" button is clicked
+                $(document).on("click", ".edit", function () {
+
+                var empId = $(this).data("item-id");
+                console.log("inside up");
+                $.ajax({
+                    url: "/Employee/GetById/" + empId,
+                    type: "GET",
+                    dataType: "json",
+                    success: function (data) {
+                        $('#c_empid').val(data.c_empid);
+                        $('#c_name').val(data.c_name);
+                        $('#c_email').val(data.c_email);
+                        // ... Populate other fields as needed
+                        console.log("Edit mode - hiding password field");
+                $('#c_password').hide();
+                $('#pass').hide();
+                            $('input[name="c_gender"][value="' + data.c_gender + '"]').prop('checked', true);
+                            $('#c_dob').val(new Date(data.c_dob).toISOString().split('T')[0]);
+                            // Handling checkbox values (assuming data.c_hobby is an array)
+                      var hobbies = Array.isArray(data.c_hobby) ? data.c_hobby : [data.c_hobby];
+$('input[name^="c_hobby"]').prop('checked', false); // Uncheck all checkboxes first
+$.each(hobbies, function (index, value) {
+    $('input[name="c_hobby_' + value.toLowerCase() + '"]').prop('checked', true);
+});
+
+
+                // Update image preview
+                if (data.c_profile) {
+                    var imagePath = '/photos/' + data.c_profile;
+                    console.log('Image Path:', imagePath); // Debug statement
+                    $('#image').attr('src', imagePath);
+                } else {
+                    console.log('No Image Found'); // Debug statement
+                    $('#image').attr('src', 'empty'); // Empty source if there is no profile picture
+                }
+
+                $('#c_role').val(data.c_role);
+
+                // Set selected values for dropdowns
+                $('#c_cityid').val(data.c_cityid);
+                $('#c_departmentid').val(data.c_departmentid);
+
+                $("#updateform").show();
+}
+                                                });
+                                            });
+
+                                            $("#updateform").click(function (event) {
+                                                event.preventDefault();
+                                                console.log("inside update");
+
+                                                var formData = new FormData($("#adddata")[0]);
+                                                var empId = formData.get("c_empid");
+
+                                                $.ajax({
+                                                    url: "/Employee/Update/" + empId,
+                                                    type: "POST", // Assuming your server expects a PUT request for update
+                                                    data: formData,
+                                                    processData: false,
+                                                    contentType: false,
+                                                    success: function (data) {
+                                                        loaddata();
+                                                        $("#updateform").hide();
+                                                    }
+                                                });
+                                            });
+                                        });
+                                    </script>
+}r

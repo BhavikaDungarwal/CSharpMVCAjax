@@ -1,8 +1,16 @@
 {
   "version": 2,
-  "dgSpecHash": "YeMKzIVL+9fq/2RhKRuBSMF3wt22qPSKtLJbTaI8+yi4cFsBAZUB3jmyx6bF1DwH07UuoWEmYJ5QWcm9bEMASw==",
+  "dgSpecHash": "g6p8VF3wbB20onmlBYgSTAA0obK7WhofpGakHj/GDkCZF7F2QmvU+Ds7hbJG3qPbYzPygE4qDEYXcZvV21ZhBA==",
   "success": true,
   "projectFilePath": "C:\\Users\\91876\\Desktop\\GitAjax\\CSharpMVCAjax\\CSharpMVCAjax\\frontend\\frontend.csproj",
-  "expectedPackageFiles": [],
+  "expectedPackageFiles": [
+    "C:\\Users\\91876\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\8.0.0\\microsoft.extensions.dependencyinjection.abstractions.8.0.0.nupkg.sha512",
+    "C:\\Users\\91876\\.nuget\\packages\\microsoft.extensions.logging.abstractions\\8.0.0\\microsoft.extensions.logging.abstractions.8.0.0.nupkg.sha512",
+    "C:\\Users\\91876\\.nuget\\packages\\npgsql\\8.0.2\\npgsql.8.0.2.nupkg.sha512",
+    "C:\\Users\\91876\\.nuget\\packages\\system.diagnostics.diagnosticsource\\8.0.0\\system.diagnostics.diagnosticsource.8.0.0.nupkg.sha512",
+    "C:\\Users\\91876\\.nuget\\packages\\system.runtime.compilerservices.unsafe\\6.0.0\\system.runtime.compilerservices.unsafe.6.0.0.nupkg.sha512",
+    "C:\\Users\\91876\\.nuget\\packages\\system.text.encodings.web\\8.0.0\\system.text.encodings.web.8.0.0.nupkg.sha512",
+    "C:\\Users\\91876\\.nuget\\packages\\system.text.json\\8.0.0\\system.text.json.8.0.0.nupkg.sha512"
+  ],
   "logs": []
 }
